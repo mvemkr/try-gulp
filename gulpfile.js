@@ -45,7 +45,7 @@ gulp.task('build:index', function(){
         .pipe(gulp.dest('dist/libs'))
 
     //Let's copy our index into dist   
-    var copyIndex = gulp.src('client/index.html')
+    var copyIndex = gulp.src('client/**/**.html')
         .pipe(gulp.dest('dist'))
     return [copyJsNPMDependencies, copyIndex];
 });

@@ -1,8 +1,10 @@
-import {Component} from 'angular2/core'
-import {OnInit} from "angular2/core";
+import {Component,View, OnInit} from 'angular2/core';
 
 @Component({
-    selector: 'about',
+    selector: 'about'
+
+})
+@View({
     template: '<h1>About</h1>'
 })
 export class AboutComponent implements OnInit{
